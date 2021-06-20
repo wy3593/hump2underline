@@ -1,0 +1,31 @@
+<idea-plugin>
+  <id>com.wy.hump2underline.toggle</id>
+  <name>Toggle Hump Underline</name>
+  <version>1.0</version>
+  <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+  <description><![CDATA[
+      Toggle hump underline, shortcut:Ctrl + Shift + I
+    ]]></description>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="ToggleAction" class="com.wy.hump2underline.action.ToggleAction" text="Toggle Hump Underline">
+      <add-to-group group-id="EditMenu" anchor="last"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift meta I"/>
+    </action>
+
+  </actions>
+
+</idea-plugin>
