@@ -5,7 +5,7 @@
   <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
 
   <description><![CDATA[
-      Toggle hump underline, shortcut:Ctrl + Shift + I
+      Toggle hump underline, shortcut:Shift + Alt + U
     ]]></description>
 
   <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
@@ -23,7 +23,7 @@
     <!-- Add your actions here -->
     <action id="ToggleAction" class="com.wy.hump2underline.action.ToggleAction" text="Toggle Hump Underline">
       <add-to-group group-id="EditMenu" anchor="last"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="shift meta I"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift alt U"/>
     </action>
 
   </actions>
